@@ -1,7 +1,7 @@
 var Toast = function() {
 };
 
-// Call this to register for toast notifications.
+// Call this to show toast notifications.
 Toast.prototype.show = function(successCallback, errorCallback, options) {
     if (errorCallback == null) { errorCallback = function() {}}
 
