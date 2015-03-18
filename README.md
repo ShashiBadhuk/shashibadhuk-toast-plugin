@@ -22,20 +22,24 @@
 This plugin is used to display toast messages in android device. you can use duration parameter
  to set how long toast will be display on the device.
  
- ```
-var options = [message, duration];  
-  window.toast(options, function(response) {  
-    console.log(response);  
-  });
 ```
-
+var options = [message, duration];  
+function successCallback(response) {
+   console.log(response);
+}
+function errorCallback(error) {
+   console.error(response);
+}
+window.plugins.toast.show(successCallback, errorCallback, options);
+```
+options should be array an contain following value :-
 * message - message which you want to display as toast message.
 * duration - It should have the string value either "long" or "short".
  
  
 ### Installation
 
-    cordova plugin add git@github.com:ShashiBadhuk/shashibadhuk-toast-plugin.git
+    cordova plugin add https://github.com/ShashiBadhuk/shashibadhuk-toast-plugin
 
 ### Supported Platforms
 
@@ -45,10 +49,19 @@ var options = [message, duration];
 
 ```
 document.addEventListener("deviceready", onDeviceReady, false);
+function successCallback(response) {
+  console.log(response);
+}
+function errorCallback(error) {
+   console.error(response);
+}
 function onDeviceReady() {
-    var options = ["Sample Toast Message displayed using shashibadhuk-toast-plugin cordova plugin", "long"];  
-    window.toast(options, function(response) {  
-        console.log(response);  
-    }
+		try {
+			 var options = ["Sample Toast Message displayed using shashibadhuk-toast-plugin cordova plugin", "long"];
+    window.plugins.toast.show(successCallback, errorCallback, options);
+		}
+		catch(err) {
+			console.error(err.message);
+		}
 }
 ```
