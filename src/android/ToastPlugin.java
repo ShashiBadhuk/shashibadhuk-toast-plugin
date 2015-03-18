@@ -2,11 +2,11 @@ package com.shashibadhuk.toast;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
-
+import android.view.Gravity;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import android.widget.Toast;
 /**
  * This class toast a string called from JavaScript.
  */
@@ -26,9 +26,9 @@ public class ToastPlugin extends CordovaPlugin {
     private void invokeToast(String message, String duration, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
             if (duration == "long")
-                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                Toast.makeText(webView.getContext(), message, Toast.LENGTH_LONG).show();
             else
-                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(webView.getContext(), message, Toast.LENGTH_SHORT).show();
             callbackContext.success(message);
         } else {
             callbackContext.error("Expected one non-empty string argument.");
