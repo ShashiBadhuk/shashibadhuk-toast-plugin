@@ -10,7 +10,7 @@ import org.json.JSONObject;
 /**
  * This class toast a string called from JavaScript.
  */
-public class Toast extends CordovaPlugin {
+public class ToastPlugin extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
