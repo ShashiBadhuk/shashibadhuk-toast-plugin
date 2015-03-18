@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-            id="com.shashibadhuk.notify" version="0.0.1">
+            id="com.shashibadhuk.toast" version="0.0.1">
         <name>Toast Plugin</name>
         <description>Toast Plugin Developed By Shashi Badhuk </description>
         <license>Apache 2.0</license>

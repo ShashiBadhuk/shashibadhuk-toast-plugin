@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Cordova Toast Plugin",
   "cordova": {
-    "id": "com.shashibadhuk.plugin.toast",
+    "id": "com.shashibadhuk.toast",
     "platforms": [
       "android",
       ]
