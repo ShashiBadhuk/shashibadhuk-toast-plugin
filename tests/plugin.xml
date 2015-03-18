@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="com.shashibadhuk.notify" version="0.0.1">
+        <name>Toast Plugin</name>
+        <description>Toast Plugin Developed By Shashi Badhuk </description>
+        <license>Apache 2.0</license>
+        <keywords>toast,cordova,shashibadhuk,notification</keywords>
+        <js-module src="www/toast.js" name="toast">
+            <clobbers target="toast" />
+        </js-module>
+        <platform name="android">
+            <config-file target="config.xml" parent="/*">
+                <feature name="Toast">
+                    <param name="android-package" value="com.shashibadhuk.plugin.Toast"/>
+                </feature>
+            </config-file>
+         </platform>
+    </plugin>

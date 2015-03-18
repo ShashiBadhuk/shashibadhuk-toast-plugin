@@ -1,0 +1,24 @@
+{
+  "name": "shashibadhuk-toast-plugin",
+  "version": "0.0.1",
+  "description": "Cordova Toast Plugin",
+  "cordova": {
+    "id": "com.shashibadhuk.plugin.toast",
+    "platforms": [
+      "android",
+      ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ShashiBadhuk/shashibadhuk-toast-plugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "toast",
+    "ecosystem:cordova",
+    "cordova-android",
+    "toast -notification"
+  ],
+  "author": "Shashi Badhuk",
+  "license": "Apache 2.0"
+}
