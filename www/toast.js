@@ -1,10 +1,31 @@
+var Toast = function() {
+};
 
+// Call this to register for toast notifications.
+Toast.prototype.show = function(successCallback, errorCallback, options) {
+    if (errorCallback == null) { errorCallback = function() {}}
 
+    if (typeof errorCallback != "function")  {
+        console.log("Toast.show failure: failure parameter not a function");
+        return
+    }
 
-window.toast = function(str, callback) {
-        cordova.exec(callback, function(err) {
-            callback('Nothing to toast.');
-        }, "ToastPlugin", "toast", str);
-    };
+    if (typeof successCallback != "function") {
+        console.log("Toast.show failure: success callback parameter must be a function");
+        return
+    }
 
+    cordova.exec(successCallback, errorCallback, "ToastPlugin", "toast", options);
+};
+//-------------------------------------------------------------------
 
+if(!window.plugins) {
+    window.plugins = {};
+}
+if (!window.plugins.toast) {
+    window.plugins.toast = new Toast();
+}
+
+if (typeof module != 'undefined' && module.exports) {
+  module.exports = Toast;
+}
