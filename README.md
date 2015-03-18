@@ -56,12 +56,11 @@ function errorCallback(error) {
    console.error(response);
 }
 function onDeviceReady() {
-		try {
-			 var options = ["Sample Toast Message displayed using shashibadhuk-toast-plugin cordova plugin", "long"];
-    window.plugins.toast.show(successCallback, errorCallback, options);
-		}
-		catch(err) {
-			console.error(err.message);
-		}
+    try {
+        var options = ["Sample Toast Message displayed using shashibadhuk-toast-plugin cordova plugin", "long"];
+        window.plugins.toast.show(successCallback, errorCallback, options);
+    } catch(err) {
+	console.error(err.message);
+    }
 }
 ```
