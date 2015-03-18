@@ -11,10 +11,10 @@
          <!-- android -->
         <platform name="android">
             <config-file target="res/xml/config.xml" parent="/*">
-                <feature name="Toast">
-                    <param name="android-package" value="com.shashibadhuk.toast.Toast"/>
+                <feature name="ToastPlugin">
+                    <param name="android-package" value="com.shashibadhuk.toast.ToastPlugin"/>
                 </feature>
             </config-file>
-            <source-file src="src/android/Toast.java" target-dir="src/com/shashibadhuk/toast" />
+            <source-file src="src/android/ToastPlugin.java" target-dir="src/com/shashibadhuk/toast" />
          </platform>
     </plugin>
