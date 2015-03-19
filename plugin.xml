@@ -6,7 +6,7 @@
         <license>Apache 2.0</license>
         <keywords>toast,cordova, phonegap, shashibadhuk, notification</keywords>
         <js-module src="www/toast.js" name="toast">
-            <clobbers target="plugins.toast" />
+            <clobbers target="toast" />
         </js-module>
          <!-- android -->
         <platform name="android">
