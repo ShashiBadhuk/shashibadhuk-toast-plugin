@@ -75,3 +75,6 @@ function onDeviceReady() {
     }
 }
 ```
+###Output
+
+https://raw.githubusercontent.com/ShashiBadhuk/shashibadhuk-toast-plugin/master/www/toast-output.png
