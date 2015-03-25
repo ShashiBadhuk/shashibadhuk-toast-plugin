@@ -29,20 +29,3 @@ if (!window.plugins.toast) {
 if (typeof module != 'undefined' && module.exports) {
   module.exports = Toast;
 }
-
-var ToastMessage = {
-    successCallback: function(response) {
-        console.log(response);
-    },
-    errorCallback : function(error) {
-        console.error(response);
-    },
-    show: function(message, time) {
-        try {
-            var options = [message, time];
-            window.plugins.toast.show(this.successCallback, this.errorCallback, options);
-        } catch(err) {
-	       console.log("Toast"+err.message);
-	   }
-    }
-};
