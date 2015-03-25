@@ -33,6 +33,8 @@ options should be array and contain following value :-
  
 ### Installation
 
+    cordova plugin add com.shashibadhuk.toast
+    or
     cordova plugin add https://github.com/ShashiBadhuk/shashibadhuk-toast-plugin
 
 ### Supported Platforms
