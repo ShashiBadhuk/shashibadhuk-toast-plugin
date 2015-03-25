@@ -77,4 +77,5 @@ function onDeviceReady() {
 ```
 ###Output
 
-![toast-output](https://cloud.githubusercontent.com/assets/4089646/6827491/af628ef0-d32d-11e4-97c6-f3088105dafb.png)
+![toast-output](https://cloud.githubusercontent.com/assets/4089646/6827537/e7337bc8-d32d-11e4-90f3-93b7b407d10a.png)
+
