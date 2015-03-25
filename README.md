@@ -25,6 +25,10 @@ This plugin is used to display toast messages in android device. you can use dur
 ```
 var options = [message, duration];  
 window.plugins.toast.show(successCallback, errorCallback, options);
+
+or 
+
+ToastMessage.show(message, duration);
 ```
 options should be array and contain following value :-
 * message - message which you want to display as toast message.
