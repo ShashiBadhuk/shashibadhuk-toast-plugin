@@ -49,16 +49,30 @@ options should be array and contain following value :-
 
 ```
 document.addEventListener("deviceready", onDeviceReady, false);
-function successCallback(response) {
-  console.log(response);
-}
-function errorCallback(error) {
-   console.error(response);
-}
+
+var ToastMessage = {
+    successCallback: function(response) {
+        console.log(response);
+    },
+    errorCallback : function(error) {
+        console.error(response);
+    },
+    show: function(message, time) {
+      try {
+        var options = [message, time];
+        window.plugins.toast.show(this.successCallback, this.errorCallback, options);
+      }
+      catch(err) {
+        console.log("Toast"+err.message);
+      }
+    }
+};
+
 function onDeviceReady() {
     try {
-        var options = ["Sample Toast Message displayed using shashibadhuk-toast-plugin cordova plugin", "long"];
-        window.plugins.toast.show(successCallback, errorCallback, options);
+        var message = "Sample Toast Message displayed using shashibadhuk-toast-plugin cordova plugin";
+        var duration = "long";
+        ToastMessage.show(message, duration);
     } 
     catch(err) {
         console.error(err.message);
