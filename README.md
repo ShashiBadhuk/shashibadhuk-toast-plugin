@@ -16,7 +16,6 @@
 -->
 
 # shashibadhuk-toast-plugin
-============================
 
 ##### If this helps you, don't forget to donate us.
 
