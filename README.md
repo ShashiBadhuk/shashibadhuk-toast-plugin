@@ -16,6 +16,12 @@
 -->
 
 # shashibadhuk-toast-plugin
+============================
+
+#### If this helps you, don't forget to donate us.
+
+<div class="pm-button"><a href="https://www.payumoney.com/paybypayumoney/#/38831"><img src="https://www.payumoney.com//media/images/payby_payumoney/buttons/112.png" /></a></div>
+
 
 ### Description
 
